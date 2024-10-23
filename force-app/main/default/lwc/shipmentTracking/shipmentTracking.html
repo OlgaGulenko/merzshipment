@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Shipment Tracking" icon-name="custom:custom63">
+      <div class="slds-m-around_medium">
+          <template lwc:if={hasStatus}>
+            <p>Status: {shipmentStatus}</p>
+          </template>
+          <template lwc:else>
+            <p>Error...</p>
+          </template>
+      </div>
+    </lightning-card>
+  </template>
